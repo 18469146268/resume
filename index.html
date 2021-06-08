@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
+  <link href="./css/index.css" rel="stylesheet">
+  <link rel="Shortcut Icon" href="./img/logo.png">
+  <title>一个手机，一个朋友</title>
+</head>
+
+<body>
+  <header class="fixed-top">
+    <!--导航栏-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" width="45" height="45" alt="九机Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#educatio">教育背景</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#professional">专业技能</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">项目案例</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inSchool">在校经历</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#self">自我评价</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">联系我</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--播放暂停按钮-->
+  <div class="audioBtn">
+    <img onclick="playPause()" id="audioBtn1" src="./img/wave.gif">
+  </div>
+  <!--内容区-->
+  <div class="container-fluid mt-5">
+    <!--求职意向-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- 指示符 -->
+      <ul class="carousel-indicators defaul-li">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+      </ul>
+      <!-- 轮播图片 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/bg.jpg">
+          <div class="carousel-caption">
+            <h3>
+              <span class="hrBrder pb-2">求职意向</span>
+            </h3>
+            <h3>Web前端开发</h3>
+            <h3>TEC专项</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/bg2.jpg">
+          <div class="carousel-caption">
+            <h3>
+              <span class="hrBrder pb-2">杨杰</span>
+            </h3>
+            <h3>一名热爱前端开发的小白程序猿</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--关于我-->
+    <div class="box1_about text-center pt-3">
+      <h4>
+        <span class="hrBrder pb-1">关于我</span>
+      </h4>
+      <div class="row">
+        <div class="col pt-2 animated fadeInUp">
+          <img src="./img/educationbBg.png">
+          <p class="pt-1">学历/本科</p>
+        </div>
+        <div class="col pt-2 animated fadeInUp">
+          <img src="./img/age.png">
+          <p class="pt-1">年龄/22岁</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col pt-2 animated fadeInUp">
+          <img src="./img/coordinates.png">
+          <p class="pt-1">坐标/云南·玉溪</p>
+        </div>
+        <div class="col pt-2 animated fadeInUp">
+          <img src="./img/learning.png">
+          <p class="pt-1">状态/2022应届</p>
+        </div>
+      </div>
+    </div>
+    <!--教育背景-->
+    <div class="box2_educatio text-center pt-3 rebWhite">
+      <h4 class="pb-2" id="educatio">教育背景</h4>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row border border-white border-bottom-0">
+            <div class="col-5 pt-3">
+              <img src="./img/school1.png">
+              <p class="year pt-2">2020—2022</p>
+            </div>
+            <div class="col-7 pt-3 school">
+              <p>云南民族大学</p>
+              <p>信息管理与信息系统</p>
+              <p>本 科</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row border border-white">
+            <div class="col-5 pt-3">
+              <img src="./img/school.png">
+              <p class="year pt-2">2017—2020</p>
+            </div>
+            <div class="col-7 pt-3 school">
+              <p>昆明冶金高等专科学校</p>
+              <p>软件技术</p>
+              <p>大 专</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--专业技能-->
+    <div class="box3_professional pt-3">
+      <div class="text-center">
+        <h4 id="professional">
+          <span class="hrBrder pb-1">专业技能</span>
+        </h4>
+      </div>
+      <ul class="list-group border-0">
+        <li class="list-group-item border-0">■ &nbsp掌握HTML、CSS、JS等基础开发技术</li>
+        <li class="list-group-item border-0">■ &nbsp了解jQuery、Ajax、Http协议</li>
+        <li class="list-group-item border-0">■ &nbsp了解Bootstrap框架，会基本使用</li>
+        <li class="list-group-item border-0">■ &nbsp初学Vue.js框架，了解一些基础语法和基本使用</li>
+        <li class="list-group-item border-0">■ &nbsp能够使用一些辅助开发工具：Git管理项目代码、Vscode编辑器</li>
+      </ul>
+    </div>
+    <!--项目案例-->
+    <div class="box4_project pt-3 pb-2 text-center rebWhite">
+      <h4 id="project">
+        <span class="hrBrderFFF pb-1">案例练习</span>
+      </h4>
+      <div class="pl-4 pr-4">
+        <!--Demo1-->
+        <!--以16:9的比例缩放视频-->
+        <div class="embed-responsive embed-responsive-16by9">
+          <video width="320" height="240" controls>
+            <source src="./img/jiujiPC618.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="mt-2">九机网·PC端首页(静态)</p>
+        <!--Demo2-->
+        <div class="embed-responsive embed-responsive-16by9">
+          <video width="320" height="240" controls>
+            <source src="./img/jiujiMobile.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="mt-2">九机网·移动端部分页面（Vue.js）</p>
+        <!--Demo3-->
+        <!-- <div class="embed-responsive embed-responsive-16by9">
+          <video width="320" height="240" controls>
+            <source src="./img/video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="mt-2">前端学习WebApp（Bootstrap4）</p> -->
+      </div>
+    </div>
+    <!--在校经历-->
+    <div class="box5_inSchool pt-3">
+      <div class="text-center">
+        <h4 id="inSchool">
+          <span class="hrBrder pb-1">在校经历</span>
+        </h4>
+      </div>
+      <ul class="list-group border-0">
+        <li class="list-group-item border-0">■ &nbsp曾任职于学院团委新媒体，负责微信公众号文章排版、发布</li>
+        <li class="list-group-item border-0">■ &nbsp荣获2020届校级优秀毕业生，并获得校级奖学金</li>
+        <li class="list-group-item border-0">■ &nbsp参加工业和信息化部组织的1+X Web前端开发(初、中级)职业技能培训，并通过考试</li>
+      </ul>
+    </div>
+    <!--自我评价-->
+    <div class="box6_self pt-3 rebWhite">
+      <div class="text-center">
+        <h4 id="self">
+          <span class="hrBrderFFF pb-1">自我评价</span>
+        </h4>
+      </div>
+      <ul class="list-group border-0">
+        <li class="list-group-item border-0">■ &nbsp一名热爱Web前端开发的小白程序猿，期待加入九机这个大家庭</li>
+        <li class="list-group-item border-0">■ &nbsp一名自律的跑步爱好者，曾参加2019安宁温泉高原国际半程马拉松，并坚持早起打卡</li>
+        <li class="list-group-item border-0">■ &nbsp有强烈的上进心和求知欲，善于学习和运用新知识</li>
+        <li class="list-group-item border-0">■ &nbsp生活积极向上、具有乐观的心态</li>
+      </ul>
+    </div>
+    <!--联系我-->
+    <div class="box7_contact pt-3 text-center">
+      <h4 id="contact">
+        <span class="hrBrder pb-1">联系我</span>
+      </h4>
+      <div class="form-row">
+        <div class="col-sm-4">
+          <li class="list-group-item border-0">
+            <img src="./img/mail.png">
+            <span class="ml-2">hnpxyj@126.com</span>
+          </li>
+        </div>
+        <div class="col-sm-4">
+          <li class="list-group-item border-0">
+            <img src="./img/tel.png">
+            <span class="ml-2">184-6914-6268</span>
+          </li>
+        </div>
+        <div class="col-sm-4">
+          <li class="list-group-item border-0">
+            <img src="./img/wechat.png">
+            <span class="ml-2">YJ541407353</span>
+          </li>
+        </div>
+      </div>
+    </div>
+    <!--返回顶部-->
+    <button class="btn border-0" id="btnTop">
+      <img src="./img/top1.png">
+    </button>
+    <!--底部-->
+    <div class="pt-3 pb-3 bg-dark text-white text-center">
+      Copyright © 杨杰 2021-2022
+    </div>
+    <!--背景音乐-->
+    <audio id="music" autoplay loop>
+      <!--显示音轨-->
+      <source src="./img/shaonian.mp3" type="audio/mpeg">
+    </audio>
+    <!---->
+  </div>
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

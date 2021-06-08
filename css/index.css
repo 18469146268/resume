@@ -1,0 +1,100 @@
+body{
+  font-family: "微软雅黑";
+}
+h4{
+  font-weight: bold;
+}
+.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+/*播放按钮*/
+.audioBtn{
+  position: fixed;
+  top: 75px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  /* text-align: center;
+  line-height: 32px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 999;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.audioBtn img{
+  height: 16px;
+  width: 16px;
+}
+.audioBtn :hover{
+  cursor: pointer;
+}
+/*轮播图图片*/
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+/*轮播标识符*/
+.defaul-li li{
+  width: 15px;
+}
+
+/*红底白字*/
+.rebWhite{
+  color: #fff;
+  background-color: #d65050;
+}
+/*关于我*/
+.box1_about p{
+  font-size: 18px;
+  font-weight: bold;
+}
+.box1_about img{
+  width: 50px;
+  height: 50px;
+}
+/*学历背景*/
+.box2_educatio .year{
+  font-size: 18px;
+  font-weight: bold;
+}
+.box2_educatio .school p{
+  font-size: 18px;
+  font-weight: bold;
+}
+/*专业技能*/
+.box3_professional{
+  font-size: 17px;
+  font-weight: bold;
+}
+/*项目案例*/
+/*在校经历*/
+/*自我评价*/
+
+.box6_self li {
+  background-color: #d65050;
+}
+/*联系我*/
+/*分割线*/
+.hrBrder{
+  display: inline-block;
+  border-bottom:3px solid #d65050;
+}
+
+.hrBrderFFF{
+  display: inline-block;
+  border-bottom:3px solid #fff;
+}
+/*返回顶部*/
+#btnTop{
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom:50px
+}
+#btnTop:focus{
+  box-shadow: none;
+}
